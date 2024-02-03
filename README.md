@@ -2,6 +2,8 @@
 
 A Vim syntax-highlighting file for issues in the [Jira](https://www.atlassian.com/software/jira) issue-tracking system. Based on the [official text-formatting help page](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all).
 
+![Screenshot](screenshot.png "Here is how the highlighting looks in my Vim.")
+
 Note: Some highlighting rules are simplified or might be missing. Feel free to contribute by opening an issue or a pull request.
 
 ## Installation
