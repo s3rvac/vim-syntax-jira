@@ -3,7 +3,7 @@
 " Language:     Jira
 " Maintainer:   Petr Zemek <s3rvac@petrzemek.net>
 " Home Page:    https://github.com/s3rvac/vim-syntax-jira
-" Last Change:  2024-02-03 05:04:13 +0100
+" Last Change:  2024-02-06 17:43:30 +0100
 "
 " The MIT License (MIT)
 "
@@ -49,13 +49,13 @@ syntax match jiraHeading /^h[1-6]\. .*/
 " Text effects
 " ------------
 
-syntax match jiraBold /\*[a-zA-Z0-9]\+\*/
-syntax match jiraItalic /_[a-zA-Z0-9]\+_/
-syntax match jiraCitation /??[a-zA-Z0-9]\+??/
-syntax match jiraStrike /-[a-zA-Z0-9]\+-/
-syntax match jiraUnderline /+[a-zA-Z0-9]\++/
-syntax match jiraSuperscript /\^[a-zA-Z0-9]\+\^/
-syntax match jiraSubscript /\~[a-zA-Z0-9]\+\~/
+syntax match jiraBold /\*[^*]\+\*/
+syntax match jiraItalic /_[^_]\+_/
+syntax match jiraCitation /??[^?]\+??/
+syntax match jiraStrike /-[^-]\+-/
+syntax match jiraUnderline /+[^+]\++/
+syntax match jiraSuperscript /\^[^^]\+\^/
+syntax match jiraSubscript /\~[^~]\+\~/
 syntax region jiraMonospace start=/{{/ end=/}}/
 syntax region jiraColorBlock start=/{color:[a-z]\+}/ end=/{color}/
 syntax match jiraQuote /^bq\. .*/
@@ -73,7 +73,7 @@ syntax match jiraDashShort /^--$/
 " -----
 
 syntax region jiraLink start=/\[/ end=/\]/
-syntax match jiraLinkAnchor /{anchor:[a-zA-Z0-9]\+}/
+syntax match jiraLinkAnchor /{anchor:[^}]\+}/
 
 " Lists
 " -----

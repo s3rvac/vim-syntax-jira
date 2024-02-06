@@ -13,21 +13,21 @@ h6. Smallest heading
 Text effects
 ------------------------------------------------------------------------------
 
-*strong*
+*strong text*
 
-_emphasis_
+_emphasized text_
 
 ??citation??
 
 -deleted-
 
-+underlined+
++underlined text+
 
-^superscript^
+^superscript text^
 
-~subscript~
+~subscript text~
 
-{{monospaced}}
+{{monospaced text}}
 
 bq. Some block quoted text
 
