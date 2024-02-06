@@ -38,7 +38,7 @@ syntax case match
 " When highlighting, start from the beginning of the file. This slows the
 " highlighting a bit, but fixes highlighting issues when scrolling through the
 " file. Anyway, Jira tickets usually do not have thousands of lines, so this
-" should be safe.
+" should be safe. I know, famous last words, right :-)?
 syntax sync fromstart
 
 " Headings
