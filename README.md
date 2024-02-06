@@ -54,6 +54,7 @@ Use the [test/test.jira](test/test.jira) file to test the syntax highlighting:
 ```bash
 vim +'setl ft=jira' +'source syntax/jira.vim' test/test.jira
 ```
+If you use the syntax file in your Vim configuration and are unable to override it with the local syntax file, disable the syntax file in your Vim configuration while developing the plugin.
 
 ## License
 
