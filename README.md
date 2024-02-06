@@ -52,7 +52,7 @@ endif
 
 Use the [test/test.jira](test/test.jira) file to test the syntax highlighting:
 ```bash
-vim test/test.jira +'set runtimepath+=.' +'setl ft=jira'
+vim +'setl ft=jira' +'source syntax/jira.vim' test/test.jira
 ```
 
 ## License
