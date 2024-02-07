@@ -26,7 +26,7 @@ If you use [lazy.nvim](https://github.com/folke/lazy.nvim), add the following pi
 -- https://github.com/s3rvac/vim-syntax-jira
 {
     "s3rvac/vim-syntax-jira",
-},
+}
 ```
 
 ### Manual installation
