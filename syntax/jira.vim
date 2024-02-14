@@ -3,7 +3,7 @@
 " Language:     Jira
 " Maintainer:   Petr Zemek <s3rvac@petrzemek.net>
 " Home Page:    https://github.com/s3rvac/vim-syntax-jira
-" Last Change:  2024-02-06 17:43:30 +0100
+" Last Change:  2024-02-14 15:12:41 +0100
 "
 " The MIT License (MIT)
 "
@@ -49,13 +49,13 @@ syntax match jiraHeading /^h[1-6]\. .*/
 " Text effects
 " ------------
 
-syntax match jiraBold /\*[^*]\+\*/
-syntax match jiraItalic /_[^_]\+_/
-syntax match jiraCitation /??[^?]\+??/
-syntax match jiraStrike /-[^-]\+-/
-syntax match jiraUnderline /+[^+]\++/
-syntax match jiraSuperscript /\^[^^]\+\^/
-syntax match jiraSubscript /\~[^~]\+\~/
+syntax match jiraBold /\(^\| \)\@<=\*[^*]\+\*\($\| \)\@=/
+syntax match jiraItalic /\(^\| \)\@<=_[^_]\+_\($\| \)\@=/
+syntax match jiraCitation /\(^\| \)\@<=??[^?]\+??\($\| \)\@=/
+syntax match jiraStrike /\(^\| \)\@<=-[^-]\+-\($\| \)\@=/
+syntax match jiraUnderline /\(^\| \)\@<=+[^+]\++\($\| \)\@=/
+syntax match jiraSuperscript /\(^\| \)\@<=\^[^^]\+\^\($\| \)\@=/
+syntax match jiraSubscript /\(^\| \)\@<=\~[^~]\+\~\($\| \)\@=/
 syntax region jiraMonospace start=/{{/ end=/}}/
 syntax region jiraColorBlock start=/{color:[a-z]\+}/ end=/{color}/
 syntax match jiraQuote /^bq\. .*/
