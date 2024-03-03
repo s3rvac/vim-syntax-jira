@@ -39,10 +39,13 @@ I use the [Firefox](https://www.mozilla.org/en-US/firefox/) web browser together
 ```vim
 let s:opened_file_path = expand('%:p')
 if s:opened_file_path =~ 'textern-.*jira.mycompany.com'
-    " Enable the Jira syntax highlighting.
-    au BufRead,BufNewFile *.txt setl ft=jira
+    augroup firefox_textern_plugin
+    autocmd!
+    " Enable Jira syntax highlighting.
+    autocmd BufRead,BufNewFile *.txt setl ft=jira
     " (Optional) Enable English spell checking.
-    au BufRead,BufNewFile *.txt setl spelllang=en
+    autocmd BufRead,BufNewFile *.txt setl spelllang=en
+    augroup end
 endif
 ```
 
