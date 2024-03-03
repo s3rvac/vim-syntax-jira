@@ -44,7 +44,7 @@ if s:opened_file_path =~ 'textern-.*jira.mycompany.com'
     " Enable Jira syntax highlighting.
     autocmd BufRead,BufNewFile *.txt setl ft=jira
     " (Optional) Enable English spell checking.
-    autocmd BufRead,BufNewFile *.txt setl spelllang=en
+    autocmd BufRead,BufNewFile *.txt setl spell spelllang=en
     augroup end
 endif
 ```
