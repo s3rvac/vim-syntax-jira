@@ -49,6 +49,8 @@ if s:opened_file_path =~ 'textern-.*jira.mycompany.com'
 endif
 ```
 
+If you want to edit descriptions of Jira issues in Vim, check out [this blog post](https://blog.petrzemek.net/2024/03/03/editing-descriptions-of-jira-issues-in-vim/).
+
 ## Development
 
 Use the [test/test.jira](test/test.jira) file to test the syntax highlighting:
