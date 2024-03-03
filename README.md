@@ -31,9 +31,7 @@ If you use [lazy.nvim](https://github.com/folke/lazy.nvim), add the following pi
 
 ### Manual installation
 
-You can also install the plugin manually by copying the
-[`syntax/jira.vim`](https://raw.githubusercontent.com/s3rvac/vim-syntax-jira/master/syntax/jira.vim)
-file to your `~/.vim/syntax` directory.
+You can also install the plugin manually by copying the [`syntax/jira.vim`](https://raw.githubusercontent.com/s3rvac/vim-syntax-jira/master/syntax/jira.vim) file to your `~/.vim/syntax` directory.
 
 ## Usage
 
