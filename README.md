@@ -1,5 +1,8 @@
 # Vim syntax highlighting for Jira issues
 
+> [!NOTE]
+> Only the on-premises / data-center Jira is supported (Jira Cloud only supports WYSIWYG editing, which renders this Vim syntax highlighting useless).
+
 A Vim syntax-highlighting file for issues in the [Jira](https://www.atlassian.com/software/jira) issue-tracking system. Based on the [official text-formatting help page](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all).
 
 ![Screenshot](screenshot.png "Here is how the highlighting looks in my Vim.")
